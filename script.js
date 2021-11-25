@@ -127,6 +127,50 @@ random2();
 random3();
 
 
+const button1 = document.querySelector("button-id")
+const button2 = document.querySelector("button-stop-id")
+
+let inputElement = document.getElementById("input")
+let divElement = document.getElementById("main-container")
+
+function onload()
+{
+setInterval(getRandomNumber,1000);
+}
+
+function getRandomNumber() 
+{
+let random =Math.floor(Math.random()*inputElement.value
+) 
+console.log(random)
+divElement.innerHTML=random
+}
+
+
+// exercice 6 
+
+const button1 = document.querySelector("button-id")
+const button2 = document.querySelector("button-stop-id")
+
+let inputElement = document.getElementById("input")
+let divElement = document.getElementById("main-container")
+
+function onload()
+{
+setInterval(setBg,1000);
+}
+const setBg = () => {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#" + randomColor;
+  color.innerHTML = "#" + randomColor;
+}
+
+genNew.addEventListener("click", setBg);
+setBg();
+}
+
+
+
 
  
 
