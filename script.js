@@ -169,9 +169,19 @@ genNew.addEventListener("click", setBg);
 setBg();
 }
 
+// autre methode 
 
+function colorChange()
+{
+let num = "123456789ABCDEF";
+let rgb="#" ;
 
-
+for (let i=0, i<6; i++) {
+  rgb=rgb+num[Math.floor(Math.random()*num.length)]
+}
+document.body.style.backgroundColor= rgb;
+}
+setInterval(colorChange,1000)
  
 
    
